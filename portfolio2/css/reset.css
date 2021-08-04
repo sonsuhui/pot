@@ -1,0 +1,84 @@
+@charset "utf-8";
+body,
+div,
+a,
+img,
+span,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+em {
+  margin: 0;
+  padding: 0;
+}
+#wrap,
+input {
+  font-size: 12px;
+  color: #222;
+  font-family: "Nanum Gothic", "나눔고딕", sans-serif;
+}
+
+#skipMenu {
+  position: relative;
+  width: 100%;
+}
+
+body #skipMenu a {
+  font-size: 12px;
+  top: -100px;
+  position: absolute;
+}
+
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: block;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+img {
+  border: 0 none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #222;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #07c;
+}
+
+ul {
+  list-style-type: none;
+}
+
+address,
+em {
+  font-style: normal;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+.dn{
+  display: none;
+}
+
+.db{
+  display: block;
+}

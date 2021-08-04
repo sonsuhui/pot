@@ -1,0 +1,793 @@
+@charset "utf-8";
+
+.bg01 {
+  background: url("../images/bg_main.png") no-repeat;
+  width: 100%;
+  height: 412px;
+  position: relative;
+}
+
+.group01 {
+  width: 710px;
+  height: 351px;
+  position: relative;
+  margin: 0 350px;
+  top: 30px;
+}
+
+.group01_2 {
+  height: 350px;
+  overflow: hidden;
+}
+.group01_2 > ul {
+  width: 2840px;
+}
+.group01_2 > ul > li {
+  position: absolute;
+  left: 0px;
+}
+.group01_2 > ul > li {
+  display: inline-block;
+}
+
+.group01 .visual-btn li {
+  font-size: 1px;
+  text-indent: -9999em;
+}
+.group01 .visual-btn li .prev {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
+.group01 .visual-btn li .prev span {
+  background: url(../images/main1.png) no-repeat;
+  display: block;
+  width: 42px;
+  height: 60px;
+}
+
+.group01 .visual-btn li .next {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+.group01 .visual-btn li .next span {
+  background: url(../images/main1.png) no-repeat;
+  background-position: -55px 0px;
+  display: block;
+  width: 42px;
+  height: 60px;
+}
+
+.group01 .visual-btn-icon li {
+  position: relative;
+  display: block;
+  float: left;
+  top: -25px;
+  left: 295px;
+  padding-left: 5px;
+}
+.group01 .visual-btn-icon .on span {
+  background: url(../images/main1.png) no-repeat;
+  background-position: 0px -74px;
+  display: block;
+  width: 37px;
+  height: 12px;
+  text-indent: -9999em;
+}
+.group01 .visual-btn-icon .off {
+  background: url(../images/main1.png) no-repeat;
+  background-position: -1px -100px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  text-indent: -9999em;
+}
+
+.group01 .visual-btn-icon .stop {
+  background: url(../images/main1.png) no-repeat;
+  background-position: -2px -127px;
+  display: block;
+  width: 10px;
+  height: 13px;
+  text-indent: -9999em;
+}
+
+.news {
+  position: relative;
+  margin: 20px;
+  top: -370px;
+  right: -720px;
+  background-color: #fff;
+  width: 378px;
+  height: 350px;
+  overflow: hidden;
+}
+.news h3 {
+  font-size: 24px;
+  margin: 12px;
+  display: block;
+}
+.news .news-btn {
+  position: relative;
+  top: 14px;
+  right: 10px;
+  height: 22px;
+  width: 72px;
+}
+.news .news-btn a {
+  background: url(../images/main1.png) no-repeat;
+  display: block;
+  width: 23px;
+  height: 22px;
+  float: left;
+  font-size: 1px;
+  text-indent: -9999em;
+  margin: 0 auto;
+}
+.news .news-btn .prev {
+  background-position: 0px -175px;
+}
+.news .news-btn .stop {
+  background-position: 0 -226px;
+}
+.news .news-btn .next {
+  background-position: -45px 0;
+  background-position: 0 -175px;
+}
+
+.news .news-nuber {
+  width: 50px;
+  height: 45px;
+  text-align: center;
+}
+.news .news-nuber span {
+  position: relative;
+  top: 15px;
+  font-weight: bold;
+  right: 15px;
+}
+
+.news_main {
+  height: 350px;
+}
+
+.news .news-list {
+  width: 1512px;
+}
+.news .news-list li {
+  display: inline-block;
+  font-size: 0;
+}
+
+.group02 {
+  background-color: #d3dde6;
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.group02 .minwon-icon_bg {
+  background-color: #fff;
+  position: absolute;
+  width: 1082px;
+  height: 144px;
+  left: 340px;
+  top: 20px;
+  margin: 10px;
+  padding: 10px 10px 20px 10px;
+}
+
+.group02 .minwon-icon_bg ul > li {
+  float: left;
+  font-size: 15px;
+  border-left: rgb(212, 212, 212) 1px solid;
+  height: 155px;
+}
+
+.group02 .minwon-icon_bg ul .min_li1 {
+  border-left: none;
+}
+
+.minwon-icon_bg ul li a:hover {
+  background: url(../images/patun1.png) repeat;
+  background-color: rgb(251, 250, 195);
+}
+.minwon-icon_bg ul li a {
+  position: relative;
+  top: -8px;
+  left: 5px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 90%;
+  height: 90%;
+}
+.minwon-icon_bg ul li span {
+  background: url(../images/main2.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 30px 42px;
+}
+
+.minwon-icon_bg ul li strong {
+  display: block;
+  right: 10px;
+}
+
+.minwon-icon_bg ul li .min2 {
+  background-position: 0 -60px;
+}
+.minwon-icon_bg ul li .min3 {
+  background-position: 0 -120px;
+}
+.minwon-icon_bg ul li .min4 {
+  background-position: 0 -175px;
+}
+.minwon-icon_bg ul li .min5 {
+  background-position: 0px -235px;
+}
+.minwon-icon_bg ul li .min6 {
+  background-position: 2px -300px;
+}
+.minwon-icon_bg ul li .min7 {
+  background-position: 5px -360px;
+}
+.minwon-icon_bg ul li .min8 {
+  background-position: 0px -420px;
+}
+
+.juyo {
+  background-color: #fff;
+  position: relative;
+  width: 377px;
+  height: 297px;
+  top: 228px;
+  left: 350px;
+}
+
+.juyo h3 {
+  font-size: 24px;
+  text-align: center;
+  height: 50px;
+  display: block;
+  background: url(../images/patun_samkak.png) repeat;
+  background-color: #043353;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.juyo ul li > a {
+  background: url(../images/main2.png) no-repeat;
+  width: 68px;
+  height: 50px;
+  float: left;
+  margin: 13px;
+  font-size: 12px;
+  margin-top: 30px;
+  display: block;
+}
+
+.juyo ul li strong {
+  display: block;
+  position: relative;
+  top: 60px;
+}
+.juyo ul .juyo1 {
+  background-position: -71px 5px;
+}
+.juyo ul .juyo2 {
+  background-position: -71px -57px;
+}
+.juyo ul .juyo3 {
+  background-position: -71px -120px;
+}
+.juyo ul .juyo4 {
+  background-position: -71px -182px;
+}
+.juyo ul .juyo5 {
+  background-position: -71px -238px;
+}
+.juyo ul .juyo6 {
+  background-position: -71px -294px;
+}
+.juyo ul .juyo7 {
+  background-position: -71px -350px;
+}
+.juyo ul .juyo8 {
+  background-position: -71px -405px;
+}
+
+.notice {
+  position: absolute;
+  /* border:5px solid darkslateblue; */
+  width: 723px;
+  height: 297px;
+  top: 227px;
+  left: 750px;
+  background-color: #fff;
+}
+
+.notice li ul li {
+  font-size: 16px;
+}
+.notice h3 {
+  font-size: 22px;
+  height: 64px;
+  text-align: center;
+  width: 168px;
+  line-height: 70px;
+}
+
+.notice .on a {
+  color: #fff;
+}
+.notice .on {
+  background: url(../images/patun_mini_samkk.png);
+  background-color: #043353;
+  height: 64px;
+  width: 168px;
+}
+
+.notice > ul {
+  width: 721px;
+}
+
+.notice ul li ul {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+
+.notice ul li h3:hover {
+  background: url(../images/patun_mini_samkk.png) repeat;
+  background-color: #3081b8;
+}
+.notice ul li h3:hover a {
+  color: #fff;
+}
+.notice .noti2 li h3 {
+  position: absolute;
+  left: 150px;
+}
+.notice .noti3 li h3 {
+  position: absolute;
+  left: 300px;
+}
+.notice .noti4 li h3 {
+  position: absolute;
+  left: 450px;
+}
+.notice .noti5 li h3 {
+  position: absolute;
+  left: 500px;
+}
+
+.notice ul li ul li {
+  overflow: hidden;
+  width: 500px;
+  margin: 10px;
+}
+.notice ul li ul li span {
+  border: 3px solid white;
+  position: absolute;
+  right: -175px;
+  top: 11px;
+}
+.notice ul li ul li a {
+  border: 3px solid white;
+  display: inline-block;
+  width: 1000px;
+  text-align: left;
+}
+
+.notice ul ul li > .nos2 {
+  top: 49px;
+}
+.notice ul ul li > .nos3 {
+  top: 85px;
+}
+.notice ul ul li > .nos4 {
+  top: 123px;
+}
+.notice ul ul li > .nos5 {
+  top: 160px;
+}
+
+.notice .notp {
+  position: absolute;
+  top: 25px;
+  left: 680px;
+  height: 20px;
+  width: 20px;
+}
+.notice .notp a {
+  background: url(../images/notic_more.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.notice .notp span {
+  font-size: 1px;
+  display: block;
+  position: absolute;
+  top: 1px;
+  text-indent: -9999em;
+}
+
+.group03 .bg_03 {
+  position: relative;
+  background: url(../images/bg-group03.png) no-repeat;
+  width: 100%;
+  height: 350px;
+}
+
+.group03 .guchok img {
+  position: relative;
+  left: 350px;
+  top: 25px;
+}
+
+.group03 .guchok a:hover {
+  background-color: rgb(59, 59, 59);
+  font-size: 17px;
+}
+
+.group03 .guchok a {
+  position: absolute;
+  color: #fff;
+  float: left;
+  bottom: 70px;
+  left: 370px;
+  font-size: 16px;
+}
+.group03 .guchok .g2 {
+  left: 560px;
+}
+.group03 .guchok .g3 {
+  bottom: 35px;
+}
+.group03 .guchok .g4 {
+  bottom: 35px;
+  left: 560px;
+}
+
+.group03 .guchok-icon {
+  position: absolute;
+  background-color: #fff;
+  width: 102px;
+  height: 300px;
+  left: 720px;
+  top: 26px;
+}
+
+.group03 .guchok-icon a {
+  background: url(../images/main2.png) no-repeat;
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 47px;
+  left: 23px;
+  margin-top: 10px;
+}
+
+.group03 .guchok-icon .gu2 {
+  top: 65px;
+  display: block;
+  position: absolute;
+}
+
+.group03 .guchok-icon .gu3 {
+  top: 135px;
+}
+
+.group03 .guchok-icon .gu4 {
+  top: 215px;
+}
+
+.group03 .guchok-icon a strong {
+  width: 60px;
+  top: 50px;
+  display: block;
+  position: absolute;
+}
+.group03 .guchok-icon .gu1 {
+  background-position: -144px -56px;
+}
+.group03 .guchok-icon .gu2 {
+  background-position: -144px -130px;
+}
+.group03 .guchok-icon .gu3 {
+  background-position: -144px -210px;
+}
+.group03 .guchok-icon .gu4 {
+  background-position: -144px -285px;
+}
+
+.group03 .internet {
+  position: relative;
+  top: -276px;
+  left: 840px;
+  width: 305px;
+  height: 305px;
+  background-color: #fff;
+}
+.group03 .internet h3 {
+  font-size: 24px;
+  position: relative;
+  top: 35px;
+  left: 20px;
+}
+.group03 .internet p {
+  position: relative;
+  top: 35px;
+  left: 20px;
+  color: #222;
+}
+
+.sebg {
+  position: relative;
+  top: 80px;
+  left: 70px;
+  background: url(../images/main3.png) no-repeat;
+  width: 151px;
+  height: 144px;
+  display: block;
+}
+
+.group03 .internet .sin-p1 a {
+  background: url(../images/main3.png) no-repeat;
+  width: 90px;
+  height: 90px;
+  background-position: 0px -250px;
+  display: block;
+  position: absolute;
+  font-size: 1px;
+  top: 0px;
+  right: -2px;
+  text-indent: -9999em;
+}
+
+.group03 .internet .ins-bg {
+  background-color: #112046;
+  position: relative;
+  top: -231px;
+  width: 305px;
+  height: 305px;
+  display: block;
+}
+.group03 .internet .in-list {
+  position: relative;
+}
+.group03 .internet .in-list ul li {
+  margin: 10px;
+}
+.group03 .internet .in-list ul li a {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+}
+
+.group03 .internet .in-list .sin-x1 a {
+  background: url(../images/main3.png) no-repeat;
+  width: 90px;
+  height: 90px;
+  background-position: 0px -150px;
+  display: block;
+  position: absolute;
+  top: -235px;
+  right: -3px;
+  font-size: 1px;
+  text-indent: -9999em;
+}
+
+.singo {
+  position: relative;
+  top: -582px;
+  width: 305px;
+  height: 305px;
+  right: -1170px;
+  background-color: #fff;
+}
+.singo h3 {
+  font-size: 24px;
+  position: relative;
+  top: 35px;
+  left: 20px;
+}
+.singo p {
+  position: relative;
+  top: 35px;
+  left: 20px;
+  color: #222;
+}
+
+.singo .sg_bg {
+  background-position: -140px 0;
+}
+.singo .sin-p2 a {
+  background: url(../images/main3.png) no-repeat;
+  width: 90px;
+  height: 90px;
+  background-position: 0px -250px;
+  display: block;
+  position: absolute;
+  font-size: 1px;
+  top: 0px;
+  right: -3px;
+  text-indent: -9999em;
+}
+.singo .sins-bg {
+  background-color: #112046;
+  position: absolute;
+  top: 0px;
+  width: 305px;
+  height: 305px;
+}
+
+.singo .singo-list ul li {
+  margin: 10px;
+}
+.singo .singo-list ul li a {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+}
+.singo .singo-list .sin-x2 {
+  background: url(../images/main3.png) no-repeat;
+  width: 90px;
+  height: 90px;
+  background-position: 0px -150px;
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  font-size: 1px;
+  text-indent: -9999em;
+}
+
+.group04 {
+  background: url(../images/patun_monun.png) repeat;
+  background-color: #fff4e6;
+  width: 100%;
+  height: 360px;
+}
+
+.group04 .gr4_bg {
+  margin: 0 auto;
+}
+
+.group04 .gr4_bg h3 {
+  padding-top: 15px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  height: 37px;
+}
+.iyoug {
+  width: 360px;
+  height: 59px;
+  display: block;
+}
+
+.iyoug h3 {
+  background: url(../images/main3.png) no-repeat;
+  background-position: 100px -357px;
+}
+.iyoug-2 h3 {
+  background: url(../images/main3.png) no-repeat;
+  background-position: 100px -401px;
+}
+.iyoug-3 h3 {
+  background: url(../images/main3.png) no-repeat;
+  background-position: 100px -442px;
+}
+.iyoug-1 {
+  background-color: #5a708c;
+}
+.iyoug-2 {
+  background-color: #4478a6;
+}
+.iyoug-3 {
+  background-color: #3e8088;
+}
+.group04 .gr4_bg {
+  left: 380px;
+  position: relative;
+  top: 37px;
+  text-align: center;
+}
+.group04 ul {
+  background-color: #fff;
+}
+.group04 li {
+  font-size: 14px;
+  width: 145px;
+  display: inline-block;
+  padding: 14px;
+}
+.group04 .iyoug1,
+.iyoug2,
+.iyoug3 {
+  width: 360px;
+  height: 293px;
+}
+
+.iyoug1,
+.iyoug2 {
+  border-right: 1px solid #c0c0c0;
+}
+
+.group05 {
+  background: url(../images/bg_munhaw.png);
+  position: relative;
+  width: 100%;
+  height: 433px;
+}
+
+.group05 .event-title {
+  margin: 0 auto;
+  width: 1125px;
+  height: 53px;
+  top: 20px;
+}
+
+.group05 .event-title p {
+  padding-top: 25px;
+}
+.group05 h3 {
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+.event .eg1,
+.eg2,
+.eg3 {
+  display: inline-block;
+  width: 66px;
+  height: 23px;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+}
+.event .eg1 {
+  background-color: #d9486e;
+}
+.event .eg2 {
+  background-color: #3f6ca6;
+}
+.event .eg3 {
+  background-color: #6a6a6a;
+}
+.group05 .event {
+  width: 1200px;
+  height: 328px;
+  margin: 0 auto;
+}
+
+.group05 .event div {
+  width: 264px;
+  height: 313px;
+  margin: 14px;
+}
+
+.group05 .event div p {
+  background-color: #fff;
+  width: 224px;
+  height: 71px;
+  padding: 6px 20px 20px;
+  font-size: 16px;
+}
+
+.group05 .event .data {
+  width: 120px;
+  display: inline-block;
+  position: absolute;
+  top: 350px;
+  margin-left: 80px;
+}

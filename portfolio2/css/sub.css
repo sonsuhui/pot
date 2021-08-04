@@ -1,0 +1,170 @@
+@charset "utf-8";
+.main_bg {
+  width: 100%;
+  height: 600px;
+  background: url(../images/visual02.jpg) no-repeat;
+}
+
+.sangdan {
+  width: 300px;
+  color: #fff;
+  font-size: 48px;
+  margin: 150px auto;
+}
+
+.container {
+  font-size: 16px;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.container .main1 {
+  margin-bottom: 150px;
+}
+.container .main1 strong {
+  font-size: 40px;
+}
+
+.container .main1 p {
+  margin: 20px;
+  font-size: 17px;
+}
+.container .main1 table {
+  border-top: 1px solid rgb(122, 122, 122);
+}
+
+.container .main1 table th {
+  background-color: rgb(88, 111, 146);
+  width: 250px;
+  padding: 25px 30px;
+  height: 50px;
+  color: #fff;
+}
+
+.container .main1 table td {
+  border-bottom: 1px solid rgb(122, 122, 122);
+  padding: 20px 30px;
+  width: 1150px;
+}
+
+.container .main1 .right_p {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.container .main1 .right_p span {
+  margin-right: 110px;
+  display: inline-block;
+}
+
+.container .main1 .radio-list {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.container .main1 .radio-list li {
+  float: left;
+  padding-right: 10px;
+}
+
+.container .main2 {
+  margin-bottom: 50px;
+}
+
+.main2 h2 {
+  width: 160px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.main2 .filsu {
+  text-align: right;
+  color: #07c;
+  font-size: 20px;
+}
+
+.main2 ul > li {
+  font-size: 21px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+.main2 ul li .con {
+  padding: 20px;
+  vertical-align: middle;
+}
+.main2 ul li .tit {
+  width: 300px;
+  display: inline-block;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.main2 ul li .color {
+  color: #07c;
+}
+
+.main2 ul li input, select{
+  padding: 8px;
+  font-size: 21px;
+}
+
+#memo {
+  font-size: 18px;
+}
+
+#file01 {
+  position: absolute;
+  right: 700px;
+  opacity: 0;
+}
+
+#support_file {
+  width: 500px;
+}
+.main2 ul li .btn {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.main2 .btn-boxs {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.main2 .btn-boxs span {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  color: #222;
+  font-weight: 500;
+  border-radius: 15px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  transition: all 1s ease;
+}
+
+.main2 .btn-boxs .btnleft {
+  background-color: rgb(16, 124, 200);
+  color: #fff;
+}
+.main2 .btn-boxs .btnright {
+  background-color: rgb(128, 128, 129);
+  color: #222;
+}
+
+.main2 .btn-boxs .btnleft:hover {
+  background-color: rgb(24, 35, 93);
+  color: #fff;
+}
+.main2 .btn-boxs .btnright:hover {
+  background-color: rgb(68, 69, 70);
+  color: #fff;
+}
