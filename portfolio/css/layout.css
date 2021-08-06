@@ -1,6 +1,6 @@
 @charset "utf-8";
 #wrapper{
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -308,9 +308,10 @@ right: -10px;
   width: 120px;
   height: 30px;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 12px;
   padding-left: 10px;
   color: #222;;
+  border: 3px solid #1468b0;
 }
 
 .gnd-search-btn:hover{
@@ -327,7 +328,7 @@ border-style: none;
 }
 
 .hamba:hover{
-  border: 1px solid rgb(85, 17, 51);
+  border: 1px solid #2383ff;
 }
 .hamba{
   width: 38px;
@@ -429,7 +430,7 @@ position: absolute;
 .banner .baner-wrap .banner-controller span{
   display: block;
   background: url(../images/footer.png) no-repeat;
-  width: 31px;
+  width: 30px;
   height: 25px;
   text-indent: -999em;
 }
@@ -459,100 +460,71 @@ position: absolute;
   width: 100%;
   background-color: #494949;
 }
-.footer .familysite-group{
+.footer .familysite_group{
   height: 50px;
-width: 1200px;
-margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
-.footer .familysite-group .site_link{
-  display: block;
+.footer .familysite_group .site_link{
+  position: relative;
   float: left;
-  position: relative;
-  background-color: #494949;
-  border-top: none;
+  background-color: #61616161;
   color: #fff;
-  margin: 0;
   margin-left: 50px;
-  width: 216px;
+  width: 235px;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
 }
 
-.footer .familysite-group .site_link button{
+.footer .familysite_group .site_link>ul{
+  width: 235px;
+  position: absolute;
+}
+
+.footer .familysite_group .site_link ul li a{
   color: #fff;
-  background-color: #494949;
-  border: 1px solid rgb(153, 153, 153);
 }
-.footer .familysite-group .site_link button span{
-  display: block;
-  padding-left: 2px;
-  padding-top: 5px;
-  width: 15px;
-  height: 9px;
-  background: url(../images/arrow.png) no-repeat;
-  float: right;
-}
-.footer .familysite-group .site_link .tit{
+.footer .familysite_group .site_link ul li{
+  background-color: #616161;
+  padding-bottom: 5px;
   position: relative;
-  left: 44px;
+}
+.footer .familysite_group .site_link ul .site_1{
+  top: -470px;
+}
+.footer .familysite_group .site_link ul .site_2{
+  top: -356px;
+}
+.footer .familysite_group .site_link ul .site_3{
+  top: -472px;
+}
+.footer .familysite_group .site_link ul .site_4{
+  top: -448px;
+}
+
+
+.footer .familysite_group .site_link h3{
+  background: url(../images/arrow.png)no-repeat 210px 5px;
   font-size: 15px;
-  text-align: center;
-  padding: 13px 0;
+  font-weight: 400;
 }
-.footer .familysite-group .group1 .site_link .tit{
-  width: 216px;
-}
-.footer .familysite-group .site_link .cont{
-  display:block;
-  position:absolute;
-  text-align: center;
-  top: -278px;
-  left: -6px;
-}
-.footer .familysite-group .group1 .site_link .cont{
-  top: -600px;
+.footer .familysite_group .site_link h3.on{
+  background: url(../images/close.png)no-repeat 210px 5px;
 }
 
-.footer .familysite-group  .site_link .cont ul li a{
-  font-size: 15px;
-  color: #fff;}
-
-.footer .familysite-group .group2 .site_link .tit{
-  width: 216px;
-}
-.footer .familysite-group .group2 .site_link .cont{
-  top: -449px;
+.off{
+  display: none;
 }
 
-.footer .familysite-group .site_link .cont ul li{
-  padding: 5px 0;
-  text-align: center;
-  color: rgb(211, 215, 255);
-  font-size: 15px;
-}
-
-.footer .familysite-group .group3 .site_link .tit{
-  width: 216px;
-}
-.footer .familysite-group .group3 .site_link .cont{
-  top: -600px;
-  left: -5px;
-}
-
-.footer .familysite-group .group4 .site_link{
-  width: 130px;
-}
-.footer .familysite-group .group4 .site_link .tit{
-  width: 130px;
-}
-.footer .familysite-group .group4 .site_link .cont{
-  top: -570px;
-  left: -5px;
-}
 
 .footer-group{
   width: 100%;
   height: 250px;
   background-color: rgb(33, 34, 34);
 }
+
+
 .footer-group .footer-wrap{
   width: 1200px;
   height: 220px;
