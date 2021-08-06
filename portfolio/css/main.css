@@ -1,57 +1,59 @@
 @charset "utf-8";
 
 .bg01 {
-  background: url("../images/bg_main.png") no-repeat;
+  background: url("../images/bg_main.png") repeat-x;
   width: 100%;
   height: 412px;
   position: relative;
 }
 
 .group01 {
-  width: 710px;
-  height: 351px;
-  position: relative;
-  margin: 0 350px;
-  top: 30px;
+  margin: 0px auto;
 }
 
 .group01_2 {
-  height: 350px;
+  position: relative;
+  top: 30px;
+  width: 710px;
   overflow: hidden;
+  height: 350px;
+  right: 120px;
 }
 .group01_2 > ul {
   width: 2840px;
-}
-.group01_2 > ul > li {
   position: absolute;
-  left: 0px;
-}
-.group01_2 > ul > li {
-  display: inline-block;
+  left: 0;
+  top: 0;
 }
 
-.group01 .visual-btn li {
+.group01_2 > ul > li {
+float: left;
+width: 710px;
+height: 350px;
+}
+
+.visu_btnlist .visual-btn {
   font-size: 1px;
   text-indent: -9999em;
 }
-.group01 .visual-btn li .prev {
+.visu_btnlist .visual-btn .prev {
   position: absolute;
   top: 150px;
   left: 10px;
 }
-.group01 .visual-btn li .prev span {
+.visu_btnlist .visual-btn .prev{
   background: url(../images/main1.png) no-repeat;
   display: block;
   width: 42px;
   height: 60px;
 }
 
-.group01 .visual-btn li .next {
+.visu_btnlist .visual-btn .next{
   position: absolute;
   top: 150px;
   right: 10px;
 }
-.group01 .visual-btn li .next span {
+.visu_btnlist .visual-btn .next{
   background: url(../images/main1.png) no-repeat;
   background-position: -55px 0px;
   display: block;
@@ -59,34 +61,41 @@
   height: 60px;
 }
 
-.group01 .visual-btn-icon li {
+.visu_btnlist .visual-btn-icon span{
   position: relative;
   display: block;
   float: left;
-  top: -25px;
   left: 295px;
-  padding-left: 5px;
+  text-indent: -9999em;
+  padding-left: 10px;
+  bottom: -330px;
 }
-.group01 .visual-btn-icon .on span {
+.visual_on{
   background: url(../images/main1.png) no-repeat;
   background-position: 0px -74px;
   display: block;
   width: 37px;
   height: 12px;
-  text-indent: -9999em;
 }
-.group01 .visual-btn-icon .off {
+.visual_off{
   background: url(../images/main1.png) no-repeat;
   background-position: -1px -100px;
   display: block;
   width: 13px;
   height: 13px;
-  text-indent: -9999em;
 }
 
-.group01 .visual-btn-icon .stop {
+.visual_stop {
   background: url(../images/main1.png) no-repeat;
   background-position: -2px -127px;
+  display: block;
+  width: 10px;
+  height: 13px;
+  text-indent: -9999em;
+}
+.visual_play{
+  background: url(../images/main1.png) no-repeat;
+  background-position: -2px -154px;
   display: block;
   width: 10px;
   height: 13px;
@@ -95,12 +104,11 @@
 
 .news {
   position: relative;
-  margin: 20px;
-  top: -370px;
-  right: -720px;
   background-color: #fff;
   width: 378px;
   height: 350px;
+  margin: -320px auto;
+  left: 350px;
   overflow: hidden;
 }
 .news h3 {
@@ -132,8 +140,7 @@
   background-position: 0 -226px;
 }
 .news .news-btn .next {
-  background-position: -45px 0;
-  background-position: 0 -175px;
+  background-position: -45px -175px;
 }
 
 .news .news-nuber {
@@ -149,36 +156,39 @@
 }
 
 .news_main {
-  height: 350px;
+  height: 350px;  
+  left: 0;
+  top: 0;
 }
 
 .news .news-list {
-  width: 1512px;
+  width: 1530px;
+
 }
 .news .news-list li {
   display: inline-block;
-  font-size: 0;
 }
 
-.group02 {
+.group02{
   background-color: #d3dde6;
-  position: relative;
   width: 100%;
-  height: 600px;
+  height: 550px;
 }
 
 .group02 .minwon-icon_bg {
-  background-color: #fff;
-  position: absolute;
-  width: 1082px;
+  width: 1100px;
   height: 144px;
-  left: 340px;
-  top: 20px;
-  margin: 10px;
-  padding: 10px 10px 20px 10px;
+  padding: 20px 0;
+  margin: 0px auto;
+}
+
+.group02 .minwon-icon_bg ul{
+  margin-top: 10px;
+  
 }
 
 .group02 .minwon-icon_bg ul > li {
+  background-color: #fff;
   float: left;
   font-size: 15px;
   border-left: rgb(212, 212, 212) 1px solid;
@@ -239,12 +249,13 @@
 }
 
 .juyo {
-  background-color: #fff;
   position: relative;
+  background-color: #fff;
   width: 377px;
   height: 297px;
-  top: 228px;
-  left: 350px;
+  top: 20px;
+  margin: 10px auto;
+  right: 390px;
 }
 
 .juyo h3 {
@@ -300,13 +311,14 @@
 }
 
 .notice {
-  position: absolute;
   /* border:5px solid darkslateblue; */
+  position: relative;
   width: 723px;
   height: 297px;
-  top: 227px;
-  left: 750px;
+  top: -287px;
+  right: -180px;
   background-color: #fff;
+  margin: 10px auto;
 }
 
 .notice li ul li {
@@ -365,38 +377,20 @@
 }
 
 .notice ul li ul li {
+  display: inline-block;
   overflow: hidden;
-  width: 500px;
+  width: 420px;
   margin: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .notice ul li ul li span {
   border: 3px solid white;
   position: absolute;
-  right: -175px;
-  top: 11px;
-}
-.notice ul li ul li a {
-  border: 3px solid white;
-  display: inline-block;
-  width: 1000px;
-  text-align: left;
-}
-
-.notice ul ul li > .nos2 {
-  top: 49px;
-}
-.notice ul ul li > .nos3 {
-  top: 85px;
-}
-.notice ul ul li > .nos4 {
-  top: 123px;
-}
-.notice ul ul li > .nos5 {
-  top: 160px;
+  right: 20px;
 }
 
 .notice .notp {
-  position: absolute;
   top: 25px;
   left: 680px;
   height: 20px;
@@ -418,49 +412,67 @@
 }
 
 .group03 .bg_03 {
-  position: relative;
-  background: url(../images/bg-group03.png) no-repeat;
+  background: url(../images/bg-group03.png) center;
   width: 100%;
   height: 350px;
+  position: relative;
 }
 
-.group03 .guchok img {
+.group03 .guchok{
+  display: block;
   position: relative;
-  left: 350px;
+  width: 357px;
+  height: 302px;
   top: 25px;
+  right: 390px;
+  margin: 0 auto;
 }
 
 .group03 .guchok a:hover {
-  background-color: rgb(59, 59, 59);
-  font-size: 17px;
+  background: url(../images/patun_mini_samkk.png)repeat;
+  background-color: rgb(112, 111, 111);
 }
 
-.group03 .guchok a {
+.guchok_a{
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  width: 357px;
+  height: 302px;
+  margin: 0 auto;
+}
+
+.group03 .guchok a{
   position: absolute;
   color: #fff;
-  float: left;
-  bottom: 70px;
-  left: 370px;
   font-size: 16px;
+  display: block;
+  top: 235px;
+  left: 20px;
 }
+
 .group03 .guchok .g2 {
-  left: 560px;
+  left: 200px;
 }
 .group03 .guchok .g3 {
-  bottom: 35px;
+  top: 270px;
+  left: 20px;
+
 }
 .group03 .guchok .g4 {
-  bottom: 35px;
-  left: 560px;
+  top: 270px;
+ left: 200px;
 }
 
 .group03 .guchok-icon {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   width: 102px;
   height: 300px;
-  left: 720px;
-  top: 26px;
+  margin: 0 auto;
+  top: -276px;
+  right: 150px;
 }
 
 .group03 .guchok-icon a {
@@ -506,12 +518,18 @@
   background-position: -144px -285px;
 }
 
+.group03 .servise{
+  position: relative;
+  margin: 0 auto;
+  top: -300px;
+  width: 700px;
+}
 .group03 .internet {
   position: relative;
   top: -276px;
-  left: 840px;
+  left: 265px;
   width: 305px;
-  height: 305px;
+  height: 300px;
   background-color: #fff;
 }
 .group03 .internet h3 {
@@ -537,7 +555,7 @@
   display: block;
 }
 
-.group03 .internet .sin-p1 a {
+.group03 .internet .in-p1 a {
   background: url(../images/main3.png) no-repeat;
   width: 90px;
   height: 90px;
@@ -553,9 +571,9 @@
 .group03 .internet .ins-bg {
   background-color: #112046;
   position: relative;
-  top: -231px;
+  top: -232px;
   width: 305px;
-  height: 305px;
+  height: 300px;
   display: block;
 }
 .group03 .internet .in-list {
@@ -571,7 +589,7 @@
   color: #fff;
 }
 
-.group03 .internet .in-list .sin-x1 a {
+.group03 .internet .in-list .in-x1 a {
   background: url(../images/main3.png) no-repeat;
   width: 90px;
   height: 90px;
@@ -586,10 +604,10 @@
 
 .singo {
   position: relative;
-  top: -582px;
+  top: -576px;
   width: 305px;
-  height: 305px;
-  right: -1170px;
+  height: 300px;
+  left: 585px;
   background-color: #fff;
 }
 .singo h3 {
@@ -620,7 +638,8 @@
   right: -3px;
   text-indent: -9999em;
 }
-.singo .sins-bg {
+
+.singo-list .sins-bg {
   background-color: #112046;
   position: absolute;
   top: 0px;
@@ -650,15 +669,11 @@
   text-indent: -9999em;
 }
 
-.group04 {
+.group04{
   background: url(../images/patun_monun.png) repeat;
   background-color: #fff4e6;
   width: 100%;
   height: 360px;
-}
-
-.group04 .gr4_bg {
-  margin: 0 auto;
 }
 
 .group04 .gr4_bg h3 {
@@ -668,7 +683,12 @@
   color: #fff;
   height: 37px;
 }
-.iyoug {
+
+.iyoug{
+  position: relative;
+}
+
+.iyoug_title{
   width: 360px;
   height: 59px;
   display: block;
@@ -696,11 +716,15 @@
   background-color: #3e8088;
 }
 .group04 .gr4_bg {
-  left: 380px;
   position: relative;
+  left: 0px;
   top: 37px;
   text-align: center;
+  width: 1090px;
+  height: 354px;
+  margin: 0 auto;
 }
+
 .group04 ul {
   background-color: #fff;
 }
