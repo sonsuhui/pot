@@ -1,23 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>손수희 PORTFOLIO</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        body, div, ul, li, header, a, h1, h2, h3{
+            margin: 0;
+            padding: 0;
+        }
+        ul{list-style-type: none;}
+        a{text-decoration: none; color: #fff;}
+        
+        .wrap{
+            width: 100%;
+            position: relative;
+        }
+
+     
+      .dot{
+          position: fixed;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+      }
+
+      .dot li{
+          position: relative;
+          width: 20px;
+          height: 20px;
+          margin: 15px 20px;
+      }
+
+      .dot li a{
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          display: block;
+          background-color: rgba(255,255,255,0.6);
+          text-indent: -9999px;
+          border: 2px solid #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }
+
+      .dot li a::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          border-radius: 100%;
+          box-shadow: 0 0 1px #fff;
+          transform: scale(3);
+          opacity: 0;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .dot li.active a{border-color: #fff;}
+      .dot li.active a::after{opacity: 1; transform: scale(1);}
+
+        #container{
+            width: 100vw;
+            text-align: center;
+        }
+
+        #container div{
+            height: 100vh;
+            line-height: 100vh;
+        }
+
+        #container div h2{
+            font-size: 90px;
+            color: #fff;
+        }
+
+        .active a{
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 5px;
+        }
+
+        #container > div h2{
+            transition: all 0.6s ease-in-out;
+        }
+        #section1 h2{transform: translate(0,0); opacity: 1;}
+        #section2 h2{transform: translate(0,-30%); opacity: 0;}
+        #section3 h2{transform: translate(-30%, 0); opacity: 0;}
+
+        #container > div.show h2{
+            transform: none;
+        }
+
+        #section1.show h2{opacity: 1;}
+        #section2.show h2{opacity: 1;}
+        #section3.show h2{opacity: 1;}
+
+        #section1{background-color: rgb(132, 104, 255);}
+        #section2{background-color: rgb(31, 210, 255);}
+        #section3{background-color: rgb(247, 93, 93);}
+    </style>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="portfolio/index.html">포트폴리오 1번</a>
-        </li>
-        <li>
-            <a href="portfolio2/index.html">포트폴리오 2번</a>
-            <a href="portfolio2/index2.html">포트폴리오 2번 서브</a>
-        </li>
-        <li>
-            <a href="">포트폴리오 3번</a>
-        </li>
-    </ul>
+    <div class="wrap">
+        <header id="header">
+            <ul class="dot">
+                <li class="active"><a href="#section1">PORTFOLIO 1</a></li>
+                <li><a href="#section2">PORTFOLIO 2</a></li>
+                <li><a href="#section3">PORTFOLIO 3</a></li>
+            </ul>
+        </header>
+    </div>
+    <div id="container">
+            <div id="section1">
+               <h2><a href="portfolio/index.html">PORTFOLIO 1</a></h2>
+            </div>
+            <div id="section2">
+               <h2><a href="portfolio2/index.html">PORTFOLIO 2 </a>
+                <a href="portfolio2/index2.html">PORTFOLIO 2 sub </a></h2> 
+            </div>
+            <div id="section3">
+                <h2><a href="">PORTFOLIO 3</a></h2>
+            </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var dot=$('.dot > li');
+            var cont = $('#container > div');
+    
+            dot.click(function(e){
+                e.preventDefault();
+                var target=$(this) //클릭한 나를 타겟에게 넣어라
+                var index=target.index()
+                var section= cont.eq(index);
+                var offset=section.offset().top;
+    
+                $('html, body').animate({
+                    scrollTop:offset
+                },600,'easeInOutExpo')
+            })
+    
+          
+             $(window).scroll(function(){
+                var wScroll = $(this).scrollTop();
+                for(var i=0; i<cont.length; i++)
+                    if(wScroll >= cont.eq(i).offset().top){
+                        dot.removeClass('active')
+                        dot.eq(i).addClass('active')
+                    }
+                    for(var i=0; i<cont.length; i++){
+                               if(wScroll >= cont.eq(i).offset().top - $(window).height()/3){
+                                   cont.eq(i).addClass('show')
+                               }else{
+                                   cont.eq(i).removeClass('show')
+                               }
+                           }
+         })
+         
+        })
+    </script>
 </body>
 </html>
